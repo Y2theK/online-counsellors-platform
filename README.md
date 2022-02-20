@@ -26,7 +26,7 @@ php artisan key:generate
 php artisan migrate --seed
 php artisan serve
 ```
-### Tech Stacka
+### Tech Stacks
 ` laravel `  ` mysql ` ` laravel/ui ` 
 
 #### Demo Accounts 
