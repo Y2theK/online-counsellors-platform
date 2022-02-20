@@ -16,4 +16,22 @@
 - Admin can manage questions 
 - Admin can have dashboard
 
+### Installation
+```php
+composer install
+cp .env.example .env
+php artisan key:generate
+# create database andconfigure your database in .env
 
+php artisan migrate --seed
+php artisan serve
+```
+### Tech Stacka
+` laravel `  ` mysql ` ` laravel/ui ` 
+
+#### Demo Accounts 
+email - user@gmail.com
+password - asdfasdf
+
+email - admin@gmail.com
+password - asdfasdf
