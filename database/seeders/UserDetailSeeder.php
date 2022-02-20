@@ -16,10 +16,10 @@ class UserDetailSeeder extends Seeder
     public function run()
     {
         $faker = \Faker\Factory::create();
-        // $faker = Faker::create();
-        for ($i = 0;$i<50;$i++) {
+        
+        for ($i = 1;$i <= 50;$i++) {
             DB::table('user_details')->insert([
-                'user_id' => rand(3, 50),
+                'user_id' => $i,
                 'age' => rand(18, 60),
                 'gender' => $faker->randomElement(['male', 'female', 'other']),
                 'field' => $faker->randomElement(['bitcoin','web','tech', 'marketing','hr','caerrer','basic','hacking']),
