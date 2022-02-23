@@ -61,10 +61,7 @@ class HomeController extends Controller
             return view('counsellorsList', compact('users'));
         }
     }
-    public function filterField(User $user)
-    {
-        $user = $user->where('');
-    }
+  
     public function appointmentProposal(User $user)
     {
         return view('appointmentProposal', compact('user'));
